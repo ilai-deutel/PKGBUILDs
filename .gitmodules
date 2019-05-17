@@ -1,0 +1,3 @@
+[submodule "tutch"]
+	path = tutch
+	url = https://aur.archlinux.org/tutch.git
