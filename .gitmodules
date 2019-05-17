@@ -1,3 +1,6 @@
 [submodule "tutch"]
 	path = tutch
 	url = https://aur.archlinux.org/tutch.git
+[submodule "git-machete"]
+	path = git-machete
+	url = https://aur.archlinux.org/git-machete.git
