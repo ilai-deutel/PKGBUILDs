@@ -18,6 +18,10 @@ Packages are checked into git as [subtrees](https://github.com/git/git/blob/mast
 
 > _**Upstream**_: [![Pipenv (upstream)](https://img.shields.io/github/v/release/pypa/pipenv?color=green&logo=github&style=flat-square&label=)![Pipenv (upstream)](https://img.shields.io/github/commits-since/pypa/pipenv/latest?color=green&style=flat-square&label=r&labelColor=green) ![Pipenv (last commit)](https://img.shields.io/github/last-commit/pypa/pipenv?style=flat-square&color=aaa)](https://github.com/pypa/pipenv)
 
+[![SCC (AUR)](https://img.shields.io/aur/version/scc.svg?label=scc&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/scc/)
+
+>  _**Upstream**_: [![SCC (upstream)](https://img.shields.io/github/v/tag/boyter/scc?color=green&label=&logo=github&style=flat-square) ![SCC (last release)](https://img.shields.io/github/release-date/boyter/scc?label=last%20release&style=flat-square&color=aaa)](https://github.com/boyter/scc)
+
 [![SCM Breeze - Git (AUR)](https://img.shields.io/badge/scm__breeze-git-blue?style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/scm_breeze-git/)
 
 > _**Upstream**_: [![SCM Breeze (upstream)](https://img.shields.io/badge/-v1.0.0-green.svg?style=flat-square&logo=github)![SCM Breeze (upstream)](https://img.shields.io/github/commits-since/scmbreeze/scm_breeze/v1.0.0?color=green&label=r&labelColor=green&style=flat-square) ![SCM Breeze (last commit)](https://img.shields.io/github/last-commit/scmbreeze/scm_breeze?style=flat-square&color=aaa)](https://github.com/scmbreeze/scm_breeze) 
