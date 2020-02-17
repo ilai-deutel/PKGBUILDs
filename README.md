@@ -12,7 +12,11 @@ Packages are checked into git as [subtrees](https://github.com/git/git/blob/mast
 
 [![Git Machete (AUR)](https://img.shields.io/aur/version/git-machete.svg?label=git-machete&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/git-machete/)
 
->  _**Upstream**_: [![Git Machete (upstream)](https://img.shields.io/github/v/tag/VirtusLab/git-machete?color=green&label=&logo=github&style=flat-square) ![Git Machete (last release)](https://img.shields.io/github/release-date/VirtusLab/git-machete?label=last%20release&style=flat-square&color=aaa)](https://github.com/VirtusLab/git-machete)
+>  _**Upstream**_: [![Git Machete (upstream)](https://img.shields.io/github/v/release/VirtusLab/git-machete?color=green&label=&logo=github&style=flat-square) ![Git Machete (last release)](https://img.shields.io/github/release-date/VirtusLab/git-machete?label=last%20release&style=flat-square&color=aaa)](https://github.com/VirtusLab/git-machete)
+
+[![Kibi (AUR)](https://img.shields.io/aur/version/kibi.svg?label=kibi&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/kibi/)
+
+>  _**Upstream**_: [![Kibi (upstream)](https://img.shields.io/github/v/release/ilai-deutel/kibi?color=green&label=&logo=github&style=flat-square) ![Kibi (last release)](https://img.shields.io/github/release-date/ilai-deutel/kibi?label=last%20release&style=flat-square&color=aaa)](https://github.com/ilai-deutel/kibi)
 
 [![Pipenv - Git (AUR)](https://img.shields.io/badge/python--pipenv-git-blue.svg?style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/python-pipenv-git/)
 
@@ -20,7 +24,7 @@ Packages are checked into git as [subtrees](https://github.com/git/git/blob/mast
 
 [![SCC (AUR)](https://img.shields.io/aur/version/scc.svg?label=scc&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/scc/)
 
->  _**Upstream**_: [![SCC (upstream)](https://img.shields.io/github/v/tag/boyter/scc?color=green&label=&logo=github&style=flat-square) ![SCC (last release)](https://img.shields.io/github/release-date/boyter/scc?label=last%20release&style=flat-square&color=aaa)](https://github.com/boyter/scc)
+>  _**Upstream**_: [![SCC (upstream)](https://img.shields.io/github/v/release/boyter/scc?color=green&label=&logo=github&style=flat-square) ![SCC (last release)](https://img.shields.io/github/release-date/boyter/scc?label=last%20release&style=flat-square&color=aaa)](https://github.com/boyter/scc)
 
 [![SCM Breeze - Git (AUR)](https://img.shields.io/badge/scm__breeze-git-blue?style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/scm_breeze-git/)
 
