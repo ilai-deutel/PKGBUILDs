@@ -14,7 +14,7 @@ Packages are checked into git as [subtrees](https://github.com/git/git/blob/mast
 
 >  _**Upstream**_: [![Git Machete (upstream)](https://img.shields.io/github/v/release/VirtusLab/git-machete?color=green&label=&logo=github&style=flat-square) ![Git Machete (last release)](https://img.shields.io/github/release-date/VirtusLab/git-machete?label=last%20release&style=flat-square&color=aaa)](https://github.com/VirtusLab/git-machete)
 
-[![Kibi (AUR)](https://img.shields.io/aur/version/kibi.svg?label=kibi&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/kibi/)
+[![Kibi (AUR)](https://img.shields.io/aur/version/kibi.svg?label=kibi&style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/kibi/) [![Kibi - Git (AUR)](https://img.shields.io/badge/kibi-git-blue.svg?style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/kibi-git/)
 
 >  _**Upstream**_: [![Kibi (upstream)](https://img.shields.io/github/v/release/ilai-deutel/kibi?color=green&label=&logo=github&style=flat-square) ![Kibi (last release)](https://img.shields.io/github/release-date/ilai-deutel/kibi?label=last%20release&style=flat-square&color=aaa)](https://github.com/ilai-deutel/kibi)
 
