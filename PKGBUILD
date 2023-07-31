@@ -6,10 +6,29 @@ pkgrel=2
 pkgdesc="Minimal PyPI server for uploading and downloading packages with pip/easy_install"
 arch=(any)
 url="https://github.com/pypiserver/pypiserver"
-license=(MIT zlib)
-depends=(python python-pip)
-makedepends=(python-build python-installer python-setuptools python-setuptools-git python-wheel)
-checkdepends=(python-httpx python-passlib python-pip python-pytest python-watchdog python-webtest)
+license=(
+  MIT
+  zlib
+)
+depends=(
+  python
+  python-pip
+)
+makedepends=(
+  python-build
+  python-installer
+  python-setuptools
+  python-setuptools-git
+  python-wheel
+)
+checkdepends=(
+  python-httpx
+  python-passlib
+  python-pip
+  python-pytest
+  python-watchdog
+  python-webtest
+)
 optdepends=(
   'python-passlib: for authentication'
   'python-setuptools: for new - still inactive - config module'
