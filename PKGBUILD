@@ -1,7 +1,7 @@
 # Maintainer: David Runge <dvzrv@archlinux.org>
 
 pkgname=pypiserver
-pkgver=2.2.0
+pkgver=2.3.2
 pkgrel=1
 pkgdesc="Minimal PyPI server for uploading and downloading packages with pip/easy_install"
 arch=(any)
@@ -36,9 +36,15 @@ optdepends=(
   'python-watchdog: for cache'
 )
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha512sums=('e1c313b52c852b90ee3efe07b754d91ac842483718fe30f0c59951aad9aa84bc36c9264956fd931a98aaad5ee151089a06472f19e4ae5e9eb1d20c72cc98f436')
-b2sums=('8c5e68201a4d376bc04ca8a5dc243c8c176f6a1bfd362fd5b0eb2875ca071cd124d15814312c2c14ded57c8476f72d41ccf1057eced2247d17f1cc6b7b12e86c')
+sha512sums=('83e48cf55892affee04533e0e1bb17dfa79548cd3629d1a61dd8f84cad635eb220ebe4207d1ceebe939eea0953fa17ffe6e549a015a9d9d6f627c9041e5786d2')
+b2sums=('7982c3fdb4cdb159e7450476a9f845825ad1d3bd1327fa125f978f1848f3a15d4d6d5f8676c8c050e25d49dd4a83e806496c863dd7f4d3e9005764b33e4a9a5e')
 validpgpkeys=('0BFB950A1851C0E7EE46D9BCAF5C892A5573ABED') # Matthew Planchard (2020-06-22-mininix) <msplanchard@gmail.com>
+
+prepare() {
+  # extract dedicated license files
+  sed -n '7,25p' $pkgname-$pkgver/LICENSE.txt > MIT.txt
+  sed -n '30,49p' $pkgname-$pkgver/LICENSE.txt > Zlib.txt
+}
 
 build() {
   cd $pkgname-$pkgver
@@ -58,5 +64,5 @@ package() {
   cd $pkgname-$pkgver
   python -m installer --destdir="$pkgdir" dist/$pkgname*.whl
   install -vDm 644 {AUTHORS,CHANGES}.rst README.md -t "$pkgdir/usr/share/doc/$pkgname/"
-  install -vDm 644 LICENSE.txt -t "$pkgdir/usr/share/licenses/$pkgname/"
+  install -vDm 644 ../{MIT,Zlib}.txt -t "$pkgdir/usr/share/licenses/$pkgname/"
 }
