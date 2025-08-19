@@ -1,8 +1,8 @@
 # Maintainer: David Runge <dvzrv@archlinux.org>
 
 pkgname=pypiserver
-pkgver=2.3.2
-pkgrel=3
+pkgver=2.4.0
+pkgrel=1
 pkgdesc="Minimal PyPI server for uploading and downloading packages with pip/easy_install"
 arch=(any)
 url="https://github.com/pypiserver/pypiserver"
@@ -36,8 +36,8 @@ optdepends=(
   'python-watchdog: for cache'
 )
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha512sums=('83e48cf55892affee04533e0e1bb17dfa79548cd3629d1a61dd8f84cad635eb220ebe4207d1ceebe939eea0953fa17ffe6e549a015a9d9d6f627c9041e5786d2')
-b2sums=('7982c3fdb4cdb159e7450476a9f845825ad1d3bd1327fa125f978f1848f3a15d4d6d5f8676c8c050e25d49dd4a83e806496c863dd7f4d3e9005764b33e4a9a5e')
+sha512sums=('543f8bf98bface6a6db996c130be5acb19aa31ab85d5d37d9766e132b38713aed1eb0a46c67f767185409bf8c4eaef6fdfdcb5137af2651b5b6191032b5c5268')
+b2sums=('99254c4cbc4290a80a2e272c1932f91e33aa7ee68a28463faf2dbad27fca505c52697aeaea812ae7aff6b0ee5e109d7c535f0d6c4bbe3af804de29a5ccabff53')
 validpgpkeys=('0BFB950A1851C0E7EE46D9BCAF5C892A5573ABED') # Matthew Planchard (2020-06-22-mininix) <msplanchard@gmail.com>
 
 prepare() {
