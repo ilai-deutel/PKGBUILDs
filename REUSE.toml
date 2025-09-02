@@ -1,0 +1,9 @@
+version = 1
+
+[[annotations]]
+path = [
+    "README.md",
+    ".gitignore",
+]
+SPDX-FileCopyrightText = "Ilaï Deutel"
+SPDX-License-Identifier = "0BSD"
