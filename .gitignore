@@ -3,3 +3,6 @@
 /*/*.tar.*
 /*/*.tgz
 /*/*.log
+
+/python-pipenv-git/python-pipenv-git/
+/python-pipenv-git/test-submodules/
