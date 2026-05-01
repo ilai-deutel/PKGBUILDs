@@ -27,7 +27,7 @@ clean +packages=all_packages:
 
 check package:
     namcap {{ package }}/PKGBUILD
-    version=$(just extract {{ package }} pkgver); if epoch=$(just extract {{ package }} epoch 2>/dev/null); then version="$epoch:$version"; fi; namcap {{ package }}/"{{ package }}-$version"-*.pkg.*
+    version=$(just extract {{ package }} pkgver); if epoch=$(just extract {{ package }} epoch 2>/dev/null); then version="$epoch:$version"; fi; namcap {{ package }}/"{{ package }}-$version"-*.pkg.tar.zst
 
 build package: && (check package)
     makepkg --dir {{ package }} --syncdeps --install --force
