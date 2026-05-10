@@ -1,3 +1,5 @@
+set script-interpreter := ['bash', '--norc', '-e', '-u', '-o', 'pipefail']
+
 alias b := build
 alias c := clean
 alias p := publish
@@ -36,21 +38,31 @@ build package: && (check package)
 upgrade package: && (build package)
     pkgctl version upgrade {{ package }}
 
+get-upstream-version package:
+    @nvchecker --file {{ package }}/.nvchecker.toml --logger json --json-log-fd 1 | jq 'select(.level != "debug") | .version' --raw-output --exit-status
+
+[script]
 check-version package:
-    pkgctl version check {{ package }}
+    upstream_version=$(just get-upstream-version {{ package }})
+    current_version=$(just extract {{ package }} pkgver)
+    if [[ ${current_version} = ${upstream_version} ]]; then
+        echo -e "\033[0;32m{{ package }}: up to date (${current_version})\033[0m"
+    else
+        echo -e "\033[0;31m{{ package }}: ${current_version} → ${upstream_version}\033[0m"
+    fi
 
 check-versions:
     echo {{ all_packages }} \
     | xargs -n1 \
     | grep -Ev '(^typst$|^python-xdg$|-git$)' \
-    | xargs pkgctl version check
+    | xargs -n 1 -- just --quiet check-version
 
 publish package:
     git subtree push --prefix {{ package }} "{{ AUR_URL }}/$(just extract {{ package }} pkgbase).git" master
     git push origin master
 
+[script]
 extract package key:
-    #!/usr/bin/env bash
     src_info={{ package }}/.SRCINFO
     value=$(sed --quiet 's/\s*{{ key }} = //p' "${src_info}")
     if [[ -z "$value" ]]; then
