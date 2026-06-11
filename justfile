@@ -54,7 +54,7 @@ check-version package:
 check-versions:
     echo {{ all_packages }} \
     | xargs -n1 \
-    | grep -Ev '(^typst$|^python-xdg$|-git$)' \
+    | grep -Ev '(^typst$|^python-xdg$|pypiserver|-git$)' \
     | xargs -n 1 -- just --quiet check-version
 
 publish package:
